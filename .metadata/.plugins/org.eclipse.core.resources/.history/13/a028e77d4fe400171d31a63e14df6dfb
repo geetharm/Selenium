@@ -1,0 +1,23 @@
+package org.geetha.testng;
+
+public class StringFormatting {
+
+	class Frog {
+		private int id;
+		private String name;
+
+		public void Frog(int id, String name) {
+			this.id = id;
+			this.name = name;			
+		}
+	}
+	public static void main(String[] args) {
+		
+		double value = 1567.7889; 
+		String str = String.format("%010.2f", value);
+		System.out.println(str);
+		
+		Frog frog = new Frog(5, "ABCD");
+		
+	}
+}

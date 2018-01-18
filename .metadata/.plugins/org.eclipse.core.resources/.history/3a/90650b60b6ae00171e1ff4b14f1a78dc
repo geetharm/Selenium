@@ -1,0 +1,50 @@
+package org.geetha.testng;
+
+import java.util.*;
+
+public class CodingExercise {
+	
+	private
+		static Integer arrayA[] = {1,2,10,20};
+		static Integer arrayB[] = {10,20,1,3,4,5};
+		
+	public void addMap(){
+		HashMap<Integer, Integer> m1 = new HashMap<Integer, Integer>();
+		
+		m1.put(arrayA[0], 1);
+		
+		Iterator<HashMap.Entry<Integer, Integer>> entry = m1.entrySet().iterator();
+		
+		while(entry.hasNext()) {
+			HashMap.Entry<Integer, Integer> pair = entry.next();
+			
+			for(int count : arrayA) {
+				if(pair.getKey() == count){
+					int num = pair.getValue();
+					pair.setValue(++num);
+				} else {
+					m1.put(count, 1);
+					System.out.println("Array1   " + count);
+				}
+			}
+			for(int count : arrayB) {
+				if(pair.getKey() == count){
+					System.out.println("Inside get key  " + count);
+					int num = pair.getValue();
+					pair.setValue(++num);
+				} else {
+					m1.put(count, 1);
+					System.out.println("Array2  " + count);
+				}
+			}
+
+		}
+		Iterator<HashMap.Entry<Integer, Integer>> print = m1.entrySet().iterator();
+		while(print.hasNext()) {
+			HashMap.Entry<Integer, Integer> pair1 = print.next();
+			System.out.println(pair1.getKey() + ":" + pair1.getValue());
+		}
+	}
+}
+
+

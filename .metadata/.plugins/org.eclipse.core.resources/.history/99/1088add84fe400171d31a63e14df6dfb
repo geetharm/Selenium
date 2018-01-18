@@ -1,0 +1,34 @@
+package org.geetha.testng;
+
+class Frog {
+	private int id;
+	private String name;
+
+	public Frog(int id, String name) {
+		this.id = id;
+		this.name = name;			
+	}
+	
+	public String toString() {
+//		return id + ": " + name;
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(id).append(": ").append(name);
+	}
+}
+
+public class StringFormatting {
+
+	public static void main(String[] args) {
+		
+		double value = 1567.7889; 
+		String str = String.format("%010.2f", value);
+		System.out.println(str);
+		
+		Frog frog1 = new Frog(5, "ABCD");
+		System.out.println(frog1);
+		
+		Frog frog2 = new Frog(6, "EFGH");
+		System.out.println(frog2);
+	}
+}

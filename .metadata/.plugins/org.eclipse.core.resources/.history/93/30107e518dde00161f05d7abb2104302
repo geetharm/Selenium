@@ -1,0 +1,13 @@
+package org.geetha.testng.selenium;
+
+import org.openqa.selenium.WebDriver;
+
+public class YahooPaypal {
+	
+	@BeforeTest
+	public void setUp(){
+		WebDriver driver = new FirefoxDriver();
+		System.setProperty("", "");
+	}
+	
+}
