@@ -10,3 +10,6 @@ target/
 test-output/
 /.metadata/
 /bin/
+
+#Exe
+.exe
