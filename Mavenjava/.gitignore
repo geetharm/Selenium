@@ -1,0 +1,18 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+
+# Test
+test-output/
+/.metadata/
+/bin/
+
+#git files
+.git/
+
+#exe files
+.exe
