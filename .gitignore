@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Eclipse files
 .project
 .classpath
@@ -14,5 +15,5 @@ test-output/
 #git files
 .git/
 
-#exe files
+#Exe
 .exe
